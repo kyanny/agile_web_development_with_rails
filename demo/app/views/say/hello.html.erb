@@ -8,7 +8,7 @@
       現在の時刻は、 <%= @time %> です。
     </p>
     <p>
-      <a href="/say/goodbye">さようなら!</a>と表示します。
+      <%= link_to "さようなら!", :action => "goodbye" %>と表示します。
     </p>
   </body>
 </html>
