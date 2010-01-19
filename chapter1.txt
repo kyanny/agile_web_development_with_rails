@@ -1,0 +1,26 @@
+*1263920497*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第1章 はじめに
+
+トニー・ブザン「頭がよくなる本」をだいたい読み終えつつあるので、読み終えた章のマインドマップを書いていくことにした。読みながら重要だと思ったキーワードにマークをつけているので、そのマークを中心に拾い読みしてマインドマップを書く => キーワードを箇条書きにしてブログに書く、という風にしてみよう。
+
+- Ruby on Rails
+- Web2.0
+-- Web アプリケーション
+--- 汎用性のある部分を取り出す -> フレームワーク (骨組み)
+-- Agile アジャイル
+--- 変化に対応する
+-- 新しい Web
+--- Ajax, RESTful
+- Rails がレール (Rails) に乗ってやってくる
+- MVC (Model View Controller)
+- Ruby
+-- オブジェクト指向
+-- 簡潔
+- DRY (Don't Repeat Yourself) 繰り返しを避けよ
+- Convention over Configuration 設定より規約
+
+<img src="http://30d.jp/img/kyanny/public/35a0ad40-051a-11df-ad3e-0018f3d17807_medium.jpg" />
+
+なんぞこれ。下手だなー。
+
+[http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]

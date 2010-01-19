@@ -1,0 +1,30 @@
+*1263921193*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第2章 Railsアプリケーションのアーキテクチャ
+
+- MVC
+- Model (How, どのように実行すべきか)
+-- モデルは門番
+--- ビジネスルール、データ検証、データストア
+-- ActiveRecord
+--- ORM (Object Relational Mapping)
+--- テーブル => クラス, 行 => オブジェクト, 列 => オブジェクトの属性
+- View
+-- ユーザーインターフェース
+--- 商品の一覧 オンラインストア
+--- XML, email, etc.
+-- ActionPack
+--- ERB (Embedded Ruby) ERb
+--- XML
+--- RJS (Ajax)
+- Controller (What, 何をすべきか)
+-- イベント (ユーザー入力) -> コントローラ -> モデル (データ)
+-- ビュー (レスポンス) <- コントローラ <- モデル (データ)
+-- action メソッド
+--- URL -> ルータ -> アクション
+-- ActionPack (ビューとセット)
+
+<img src="http://30d.jp/img/kyanny/public/3c2eba08-051a-11df-a0aa-0018f3d17792_medium.jpg" />
+
+第1章のよりは少しうまくかけた。モデルを下に書いたほうが良かったと思った (土台って感じがするので)
+
+[http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
