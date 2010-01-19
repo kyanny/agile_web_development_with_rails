@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Loop, loop, loop...</title>
+  </head>
+  <body>
+    <ul>
+      <% 3.times do |count| %>
+      <li><%= count %> times...</li>
+      <% end %>
+      <li>finish!</li>
+    </ul>
+    <ul>
+      <% 3.times do |count| -%>
+      <li><%= count %> counts...</li>
+      <% end -%>
+      <li>finish!</li>
+    </ul>
+  </body>
+</html>

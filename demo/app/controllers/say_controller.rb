@@ -5,4 +5,8 @@ class SayController < ApplicationController
 
     def goodbye
     end
+
+    def loop
+
+    end
 end
