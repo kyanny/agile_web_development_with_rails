@@ -9,4 +9,8 @@ class SayController < ApplicationController
     def loop
 
     end
+
+    def files
+        @files = Dir.glob('*')
+    end
 end
