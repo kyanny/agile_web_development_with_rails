@@ -4,19 +4,8 @@
   </head>
   <body>
     <h1>Railsからこんにちは!</h1>
-    <ul>
-      <li>足し算: <%= 1+2 %> </li>
-      <li>連結: <%= "cow" + "boy" %> </li>
-      <li>1時間後の時刻: <%= 1.hour.from_now %> </li>
-    </ul>
-    <% 3.times do -%>
-    ホー!<br />
-    <% end -%>
-    メリークリスマス!
-    <% 3.downto(1) do |count| -%>
-    <%= count %>...<br />
-    <% end %>
-    発射!
-    Eメール: <%= h("Ann & Bill <frazers@isp.email>") %>
+    <p>
+      現在の時刻は、 <%= Time.now %> です。
+    </p>
   </body>
 </html>
