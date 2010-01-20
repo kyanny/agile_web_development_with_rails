@@ -10,14 +10,12 @@ class StoreController < ApplicationController
         @cart.add_product(product)
     rescue
         logger.error("無効な商品#{params[:id]}にアクセスしようとしました")
-        flash[:notice] = "無効な商品です"
-        redirect_to :action => "index"
+        redirect_to_index("無効な商品です")
     end
 
     def empty_cart
         session[:cart] = nil
-        flash[:notice] = "カートは現在空です"
-        redirect_to :action => "index"
+        redirect_to_index("カートは現在空です")
     end
 
     private
@@ -27,5 +25,10 @@ class StoreController < ApplicationController
             session[:cart] = Cart.new
         end
         session[:cart]
+    end
+
+    def redirect_to_index (msg)
+        flash[:notice] = msg
+        redirect_to :action => "index"
     end
 end
