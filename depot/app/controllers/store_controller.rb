@@ -12,6 +12,7 @@ class StoreController < ApplicationController
         product = Product.find(params[:id])
         @cart = find_cart
         @cart.add_product(product)
+        session[:counter] = 0
     rescue
         logger.error("無効な商品#{params[:id]}にアクセスしようとしました")
         redirect_to_index("無効な商品です")
