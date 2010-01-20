@@ -14,6 +14,12 @@ class StoreController < ApplicationController
         redirect_to :action => "index"
     end
 
+    def empty_cart
+        session[:cart] = nil
+        flash[:notice] = "カートは現在空です"
+        redirect_to :action => "index"
+    end
+
     private
 
     def find_cart
