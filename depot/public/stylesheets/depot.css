@@ -158,6 +158,23 @@ h1 {
 }
 /* END:inline */
 
+/* START:cartmain */
+/* Styles for the cart in the main page */
+
+.cart-title {
+  font: 120% bold;
+}
+
+.item-price, .total-line {
+  text-align: right;
+}
+
+.total-line .total-cell {
+  font-weight: bold;
+  border-top: 1px solid #595;
+}
+/* END:cartmain */
+
 /* The error box */
 
 .fieldWithErrors {
