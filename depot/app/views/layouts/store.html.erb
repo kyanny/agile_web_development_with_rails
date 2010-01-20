@@ -24,6 +24,7 @@
       <% if flash[:notice] %>
       <div id="notice"><%= flash[:notice] %></div>
       <% end %>
+      <div><%= pluralize(session[:counter], "visit") %>, thanks!</div>
       <%= yield :layout %><!-- <label id="code.depot.e.include"/> -->
     </div>
   </div>
