@@ -7,7 +7,7 @@
   <%= product.description %>
   <div class="price-line">
     <span class="price"><%= number_to_currency(product.price) %></span>
-    <%= button_to "カートに入れる" %>
+    <%= button_to "カートに入れる", :action => "add_to_cart", :id => product %>
   </div>
 </div>
 <% end %>
