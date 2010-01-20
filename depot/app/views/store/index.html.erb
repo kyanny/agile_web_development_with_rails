@@ -6,7 +6,7 @@
   <h3><%=h product.title %></h3>
   <%= product.description %>
   <div class="price-line">
-    <span class="price"><%= number_to_currency(product.price, { :precision => 3, :unit => "&pound;", :separator => ",", :delimiter => "" }) %></span>
+    <span class="price"><%= number_to_currency(product.price) %></span>
     <%= button_to "カートに入れる" %>
   </div>
 </div>
