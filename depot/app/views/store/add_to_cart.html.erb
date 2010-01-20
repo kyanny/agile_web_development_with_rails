@@ -3,4 +3,6 @@
   <% for item in @cart.items %>
   <li><%= item.quantity %> &times; <%=h item.title %></li>
   <% end %>
+
+  <%= button_to "カートを空にする", :action => "empty_cart" %>
 </ul>
