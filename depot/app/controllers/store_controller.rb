@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class StoreController < ApplicationController
   def index
       @products = Product.find_products_for_sale
@@ -7,6 +8,10 @@ class StoreController < ApplicationController
         product = Product.find(params[:id])
         @cart = find_cart
         @cart.add_product(product)
+    rescue
+        logger.error("無効な商品#{params[:id]}にアクセスしようとしました")
+        flash[:notice] = "無効な商品です"
+        redirect_to :action => "index"
     end
 
     private
