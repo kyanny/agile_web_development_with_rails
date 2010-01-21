@@ -7,7 +7,9 @@
   <%= product.description %>
   <div class="price-line">
     <span class="price"><%= number_to_currency(product.price) %></span>
-    <%= button_to "カートに入れる", :action => "add_to_cart", :id => product %>
+    <% form_remote_tag :url => { :action => "add_to_cart", :id => product } do %>
+    <%= submit_tag "カートに入れる" %>
+    <% end %>
   </div>
 </div>
 <% end %>
