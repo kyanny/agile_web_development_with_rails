@@ -15,7 +15,11 @@
   </div>
   <div id="columns">
     <div id="side">
-      <div id="cart">
+      <div id="cart"
+           <% if @cart.items.empty? %>
+           style="display: none"
+           <% end %>
+           >
         <%= render(:partial => "cart", :object => @cart) %>
       </div>
 
