@@ -6,6 +6,7 @@ class StoreController < ApplicationController
           session[:counter] = 0
       end
       session[:counter] += 1
+      @cart = find_cart
   end
 
     def add_to_cart
