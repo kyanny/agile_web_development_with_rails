@@ -2,7 +2,9 @@
 
 <% for product in @products -%>
 <div class="entry">
-  <%= link_to image_tag(product.image_url), { :action => "add_to_cart" }, { :method => "post" } %>
+  <% form_remote_tag :url => { :action => "add_to_cart", :id => product } do %>
+  <%= image_submit_tag(product.image_url) %>
+  <% end %>
   <h3><%=h product.title %></h3>
   <%= product.description %>
   <div class="price-line">
