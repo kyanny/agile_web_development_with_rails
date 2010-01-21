@@ -15,7 +15,8 @@ class StoreController < ApplicationController
         @current_item = @cart.add_product(product)
         session[:counter] = 0
         respond_to do |format|
-            format.js
+            format.js if request.xhr?
+            format.html { redirect_to_index }
         end
     rescue
         logger.error("無効な商品#{params[:id]}にアクセスしようとしました")
