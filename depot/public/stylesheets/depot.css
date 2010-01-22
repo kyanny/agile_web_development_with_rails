@@ -190,6 +190,42 @@ h1 {
 }
 /* END:cartside */
 
+/* START:form */
+/* Styles for order form */
+
+.depot-form fieldset {
+  background: #efe;
+}
+
+.depot-form legend {
+  color: #dfd;
+  background: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+
+.depot-form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+
+.depot-form select, .depot-form textarea, .depot-form input {
+  margin-left: 0.5em;
+}
+
+.depot-form .submit {
+  margin-left: 4em;
+}
+
+.depot-form div {
+  margin: 0.5em 0;
+}
+/* END:form */
+
 /* The error box */
 
 .fieldWithErrors {
