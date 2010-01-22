@@ -5,11 +5,11 @@
     <legend>あなたの詳細情報をご記入ください</legend>
     <div>
       <%= form.label :name, "お名前:" %>
-      <%= form.text_field, :name, :size => 40 %>
+      <%= form.text_field :name, :size => 40 %>
     </div>
     <div>
       <%= form.label :address, "ご住所:" %>
-      <%= form.text_area, :address, :rows => 3, :cols => 40 %>
+      <%= form.text_area :address, :rows => 3, :cols => 40 %>
     </div>
     <div>
       <%= form.label :email, "Eメール:" %>
