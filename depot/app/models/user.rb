@@ -35,6 +35,12 @@ class User < ActiveRecord::Base
         user
     end
 
+    def after_destroy
+        if User.count.zero?
+            raise "最後のユーザは削除できません"
+        end
+    end
+
     private
 
     def password_non_blank
