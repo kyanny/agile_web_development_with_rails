@@ -10,6 +10,19 @@ class User < ActiveRecord::Base
 
     validate :password_non_blank
 
+    def password
+        @password
+    end
+
+    def password= (pwd)
+        @password = pwd
+        return if pwd.blank?
+        create_new_salt
+        self.hashed_password = User.encrypted_password(self.password, self.salt)
+                              #self.encrypted_password でも良いはず...?
+                                                      #@password, self.salt でも良いはず...?
+    end
+
     private
 
     def password_non_blank
