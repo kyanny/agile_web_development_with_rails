@@ -23,6 +23,18 @@ class User < ActiveRecord::Base
                                                       #@password, self.salt でも良いはず...?
     end
 
+    def self.authenticate (name, password)
+        user = self.find_by_name(name)
+        if user
+            encrypted_password = encrypted_password(password, user.salt)
+                                #self.encrypted_password() と呼ぶほうがいいんじゃないかなぁ...
+            if user.hashed_password != encrypted_password
+                user = nil
+            end
+        end
+        user
+    end
+
     private
 
     def password_non_blank
