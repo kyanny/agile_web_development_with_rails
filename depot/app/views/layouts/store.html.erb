@@ -15,15 +15,27 @@
   </div>
   <div id="columns">
     <div id="side">
+      <% if @cart %>
       <% hidden_div_if(@cart.items.empty?, :id => "cart") do %>
       <%= render(:partial => "cart", :object => @cart) %>
+      <% end %>
       <% end %>
 
       <a href="http://www....">Home</a><br />
       <a href="http://www..../faq">Questions</a><br />
       <a href="http://www..../news">News</a><br />
       <a href="http://www..../contact">Contact</a><br />
-      <a href="#"><%=h Time.now %></a><br />
+      <a href="#"><%=h Time.now %></a><br /><br />
+
+      <% if session[:user_id] %>
+      <div>
+        <%= link_to '注文', :controller => 'orders' %><br />
+        <%= link_to '商品', :controller => 'products' %><br />
+        <%= link_to 'ユーザ', :controller => 'users' %><br /><br />
+        <%= link_to 'ログアウト', :controller => 'admin', :action => 'logout' %><br />
+      </div>
+      <% end %>
+
     </div>
     <div id="main">
       <% if flash[:notice] %>
