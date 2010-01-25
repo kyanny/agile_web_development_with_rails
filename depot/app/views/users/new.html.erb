@@ -1,23 +1,35 @@
 <h1>New user</h1>
 
+<div class="depot-form">
+
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :hashed_password %><br />
-    <%= f.text_field :hashed_password %>
-  </p>
-  <p>
-    <%= f.label :salt %><br />
-    <%= f.text_field :salt %>
-  </p>
-  <p>
-    <%= f.submit "Create" %>
-  </p>
+  <fieldset>
+    <legend>ユーザの詳細情報入力</legend>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name, :size => 40 %>
+    </div>
+
+    <div>
+      <%= f.label :user_password, 'パスワード' %>
+      <%= f.password_field :password, :size => 40 %>
+    </div>
+
+    <div>
+      <%= f.label :user_password_confirmation, '確認' %>
+      <%= f.password_field :password_confirmation, :size => 40 %>
+    </div>
+
+    <div>
+      <%= f.submit "Create", :class => "submit" %>
+    </div>
+
+    </fieldset>
 <% end %>
 
+</div>
+
 <%= link_to 'Back', users_path %>
+
