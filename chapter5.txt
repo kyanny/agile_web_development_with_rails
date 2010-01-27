@@ -1,0 +1,11 @@
+*1264608267*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第5章 Depotアプリケーション
+
+第5章はこれから作る Depot についての概要説明のみ。実作業はないのでパス。
+
+
+- <a href="http://d.hatena.ne.jp/a666666/searchdiary?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版</a>
+- <a href="http://d.hatena.ne.jp/a666666/archive?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版 (見だし一覧)</a>
+- [http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
+
+<!-- **************************************** -->
