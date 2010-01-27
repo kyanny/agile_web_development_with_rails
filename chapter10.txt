@@ -1,0 +1,40 @@
+*1264610682*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第10章 タスクE: チェックアウト！
+
+注文する機能の実装。モデル間のリレーションが出てきた。 has_many, belongs_to など。
+
+- データベースの外部キー制約
+-- データベースの種類に依存する (汎用性はない)
+- モデル間のリレーションシップ
+- モデルと連動したフォーム
+-- 空のモデルオブジェクト (まだデータベース内の行と関連していない) をメモリ内に作ってフォームと関連づける
+-- form_for ヘルパー
+- メモリ内に作られた order オブジェクトと、データベースに保存された order オブジェクトの違いを意識する
+-- モデルオブジェクトには、データベースとのデータのやり取りだけではなく、通常のオブジェクトとしてビジネスデータを保持する役割もある
+
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/2d43b49a07461b7dc8ebb9e62a1331e0cc3f0a06:title=10.1 イテレーションE1 order モデル]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b97a149b5abec2657d91c6ea5fec97d070f55062:title=10.1 イテレーションE1 line_item モデル]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/5a277c5d1c5daecf607a3f41622a5ba628dd71d0:title=order.pay_type size limit]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/1984930e5092b2cae7cb0b42cfc42006492a0114:title=line_items マイグレーション修正]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/095e6b2caa16d24bd6ec18de3a1e560123d04fcd:title=rake db:migrate による変更]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/93debaaf5cc3ef5687dd9414654ba6ef2ca43c72:title=モデル間のリレーションシップ]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/3330b84d604e35955d9fc948cb8dc73b52bb4dd6:title=checkout action を実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/064c0df9f95398bdbcad2fc591502d9c53f2a6bb:title=checkout テンプレート]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/c579ab8f52a360e63d4e7e0e85cf62f849357132:title=define PAYMENT_TYPES in model]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/cdcf37f906d02b0718b41da4792ba738c676c369:title=CSS]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/33b0695980ad608e3ebda38a242fdd7c2ab1291f:title=fix]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/791792fe06d40e0e55c67e6f2e35469393492fa1:title=order モデルにバリデーションを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/04320567a1464e072f0bca1febe4bbbbc1d793a6:title=save_order action を実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/7826105d82438486a3570a8871e4c0e4c2ae3d7c:title=add_line_items_from_cart メソッドを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/de869bccdc54c443e166286e8272b84d6ed8312b:title=from_cart_item クラスメソッドを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/8a7a2c4ec17416c75c0064bef5f7e939e987ca2e:title=fix]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/d293a53edc107bc62f33f6e0dddd75382f07843a:title=カートに商品が追加されたら notice メッセージは隠す]
+
+このへんから自由課題が難しくなってきたので飛ばしがちになった。
+
+
+- <a href="http://d.hatena.ne.jp/a666666/searchdiary?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版</a>
+- <a href="http://d.hatena.ne.jp/a666666/archive?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版 (見だし一覧)</a>
+- [http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
+
+<!-- **************************************** -->
