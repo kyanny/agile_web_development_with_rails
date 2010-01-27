@@ -1,0 +1,39 @@
+*1264610216*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第9章 タスクD: Ajaxの追加
+
+Ajax。部分テンプレート、 RJS など。 RJS はなんかむずかしそう。
+
+- 部分テンプレート
+-- ビューの一部を専用のファイルにおさめたもの
+-- ふつうは one action => one view template となる
+- 「一つのテンプレートにロジックが入りすぎていないか」
+- 部分テンプレート内ではテンプレートファイルと同じ名前のローカル変数にアクセスできる
+-- このへんは実際にテンプレートを書きながら覚えるしか...
+- form_remote_tag リモートプロシージャコール
+- page 変数 JavaScript ジェネレータ
+- ヘルパーメソッドの作成
+-- 処理をビューから切り離すして抽象化するときはヘルパーを作るべき
+- content_tag ヘルパー
+- JavaScript が無効の場合？
+-- xhr? メソッド
+- Ajax 対応するときは、まず Ajax なしの場合で動くように作ってから Ajax 対応のコードを追加していくと良い
+-- JavaScript 無効のときの実装も同時に作れる
+
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/c6fd561768a5189917615701a7b9654d85aaf630:title=9章 Ajax 9.1 イテレーションD1]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/1320e6cd4a19422603e5f4a36293add06c1363c1:title=ページ遷移の変更]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/be42c931c518d0c7c4eaf6828b13494194090adb:title=remove add_to_cart.html.erb template]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/3d81f52bfcb5068b724e64ad90c98907cf417b0d:title=9.2 イテレーションD2 Ajax based Cart]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/8730e0086fad301edc63e097f214d6893939e592:title=9.3 イテレーションD3 Yellow Fade]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/85596fa7191621fba4b5aaa01bdb86079086e839:title=9.4 イテレーションD4 空のカートを隠す]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/61ddcd3861c7c3a43b9c85c2910db100998c880f:title=9.4 ヘルパー]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b98f6461672298e157e884a08ca5d7dd479d1a03:title=9.4 empty cart のときメッセージを出さないように]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/1db36aaf6315c841374b4c38978d7e67209301a0:title=9.5 イテレーションD5 JS無効]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/4430cbef09d1bea7f61658fcb2a0416f5c2ebd01:title=自由課題, image_submit_tag]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/6ebf5f94b8399a9d3b4b40502cf97bb8a8f6b778:title=自由課題 empty_cart を blind_up 効果を利用して実装]
+
+
+- <a href="http://d.hatena.ne.jp/a666666/searchdiary?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版</a>
+- <a href="http://d.hatena.ne.jp/a666666/archive?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版 (見だし一覧)</a>
+- [http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
+
+<!-- **************************************** -->
