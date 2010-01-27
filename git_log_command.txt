@@ -1,0 +1,1 @@
+git log --reverse --format="- [http://github.com/kyanny/agile_web_development_with_rails/commit/%H:title=%s]"
