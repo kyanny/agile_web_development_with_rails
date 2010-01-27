@@ -1,0 +1,45 @@
+*1264611567*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第11章 タスクF: ユーザ管理
+
+管理画面と管理者ユーザの追加、アクセス制限などの実装。モデルの仮想属性、セッションによる認証、トランザクションとフックなど。
+
+- モデルの仮想属性
+-- attr_accessor などで定義する
+-- データベースのテーブルのカラムと関連付かないがモデルオブジェクトが保持しているデータ
+- Active Record の動的ファインダ => あとで
+- 同じアクション内で HTTP GET/POST による処理の振り分け request.post?
+- Rails のフィルタ機能
+-- action の実行前後にフックをかけられる
+- Active Record のフックメソッド => これもあとで, モデルに対するフィルタみたいなもの
+
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/2dc613566e4dbbd4c271c9c8847a7b4c65f1b71e:title=11章 タスクF ユーザー管理 scaffold]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/460303dc39e28be28747b1ddc7bce8de195e1dc4:title=rake db:migrate]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/bb8580ae28b397d9fbb43d4c29a40b27ecc7e82b:title=User モデルにバリデーションを追加]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/dd18086817058a884c938518c16e6a52e086790e:title=パスワードを暗号化するメソッドとランダムな salt を作るメソッドを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/adc63033fa0f926555528c54acfb979b27842b4e:title=password, password= メソッドを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b34d4aa72f155ae907e675f9cd45d38185a75ddb:title=User.authenticate クラスメソッドを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/9da95f402c54744be7a3011836d4993d9fc67d67:title=users_controller updated.]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b3e3f28cab53fc15fc5ccdbdfff10c9a7f70dbf5:title=表示する必要のないカラムをビューから削除　]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/68a916e37a52fb8578f7b529f13858c4b36bd5c6:title=ビューの実装、フォーム]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/db8c0a5c2a2fefce2329105537ad2557431055f8:title=generate admin controller]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b74ab31aa0104cea70042b321d8f8df9f7373bba:title=ログインフォームの実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/f4a5ca650f37638d4dfab3d903ce2e5ebeacc6e3:title=admin/index]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/f82ae74743791fe2eb132500db76224404e49ec2:title=before_filter]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b3c4896be56097b54be78e8366d6af8a57013117:title=fix]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/ae6b48e05dde483ec0fa179ef64fb819dd4d729b:title=特定のコントローラでフィルタを無効化したい場合はフィルタに指定したメソッドをオーバーライドする (何もしないメソッドで上書きする)]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/1073f9969ad2c81159897431b5cf13058a1d7943:title=フィルタと同様にレイアウトもアプリケーション全体に対して指定できる (controller/application.rb で layout "hoge")]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/d086132c75e30ab99e146ff68f2e7349716b03f4:title=レイアウトテンプレートを修正]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/7e25354496171acee54bf22c09c9cbfeda121bb3:title=コントローラと同名の layout テンプレートが存在すると上書きされてしまうので消す (scaffold で作られたファイル)]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/36972738cd58df70f1432fcffdf3f1bf6b24f9d3:title=fix]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/2dbee34576c8fafcd210dac8b6c0faf0ed7b5b9a:title=after_destroy フック]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/9d240a314980c7983883f1f2f43635c879918e2c:title=ログアウトアクションを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/118aecfc2a586ac5fa369966d1dd0fcefcc1764a:title=特定のコントローラ内で before フィルタを利用する]
+
+まとめが書けるのはここまで。12章以降はまた実践をしていこう。同時に、第二部も読み始めている。こちらは主に座学になるから、メモする内容も増えそう。またマインドマップを書いてみるのもいいかもしれない。
+
+
+- <a href="http://d.hatena.ne.jp/a666666/searchdiary?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版</a>
+- <a href="http://d.hatena.ne.jp/a666666/archive?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版 (見だし一覧)</a>
+- [http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
+
+<!-- **************************************** -->
