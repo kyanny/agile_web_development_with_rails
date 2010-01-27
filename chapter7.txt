@@ -1,0 +1,35 @@
+*1264609198*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第7章 タスクB: カタログの表示
+
+カスタマーがアクセスする商品一覧ページを作る。
+
+- 抽象度を持たせてプログラムを作成する
+-- コントローラのアクション内にモデルべったりの実装をしない
+- レイアウトを利用してテンプレートを warp する
+-- yield :layout, @content_for_layout
+- button_to ヘルパー
+-- link_to は HTTP GET, button_to は HTTP POST
+
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/a05633a35ab96d1689e677695f2c3fac1ec7d425:title=Add blog skelton text]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/7a9c75ccee5dc3c5cba531a5fbe40218189f6165:title=Add intro, chapter1, chapter2 blogged text]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/69b3dda3a351129035c7c926c3cd365c70e30fe4:title=skelton updated. add links to series.]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/2b0fef5e1c25698d551c190934af61d07ca3c83a:title=update end link]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/d0225dcaa1548d683786b9653d7a1a8d836f839b:title=New controller 'store' generated. added.]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/5255d8488fe014383645b57a04b2a5bd516511a3:title=Product モデルに find_products_for_sale メソッドを追加 ビューを整えた]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/2913f370012079067b467ebc8f9ddee5ad9b4798:title=Store view の layaut テンプレートを追加した]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/8fc06fa3f960748e208ce45d3ffb54aef74c801d:title=CSS]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/f1b8117cf43b9e8ddc15f78f55505cbb1ab0e7f3:title=Price format (bad style)]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/d096918e0b5b5282461501ad9b5ad3c0a2a4ba10:title=Price format (with helper)]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/2160221391af0c2cea505e9ce18b942ccd182dc8:title=カートに入れるボタンをつけた]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/3f34383d4dab0cb3f835164dd25b0dddd0285148:title=CSS]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/82c48ae5852a01bfa398e206d582eed19cd1f243:title=自由課題、日付と時刻]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/3b4e8d6ccea6dd8ffb390cd9ef79f7611617bff6:title=自由課題、画像クリックで add_to_cart アクションを呼び出す link_to "innerHTML", { :action => "foo" }, { html_options }]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/3c5ed2cd22c15f0178c89bdb12d9abcc982077b4:title=自由課題、 number_to_currency customize]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/d1e23f64e058a04417761d3abe75f494ff912ac0:title=自由課題リセット]
+
+
+- <a href="http://d.hatena.ne.jp/a666666/searchdiary?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版</a>
+- <a href="http://d.hatena.ne.jp/a666666/archive?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版 (見だし一覧)</a>
+- [http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
+
+<!-- **************************************** -->
