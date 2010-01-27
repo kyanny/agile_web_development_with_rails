@@ -1,0 +1,48 @@
+*1264609700*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第8章 タスクC: カートの作成
+
+ショッピングカート機能を実装する。セッションを使う。フラッシュも。
+
+- セッション
+-- ステートレスな HTTP プロトコルの上位でステートフルトランザクションの仕組みを擬似的に実現するもの
+-- Rails では cookie ベースのものがデフォルト => 他のストレージを使う場合は設定変更が必要
+- session ハッシュに似てる、コントローラ内でアクセス可能
+- private メソッドは action として公開されない
+- params オブジェクトにリクエストパラメータが入っている
+- 「アプリケーションレベルのオブジェクトをセッションデータに格納するのは、一般には本当に最悪」
+-- Product の例
+-- オブジェクトそのものではなく、 primary key などの単純な数値、テキストなどを入れるべき
+- flash リクエストをまたがってアクセスできる一時的なデータ置き場、エラーメッセージなど
+- 共通のコードはメソッドとして抽出して重複をなくす
+
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/72cead251b6a2344f25c9aa7db540a0252bac0bf:title=Add session table]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/f058b4093c3a1c4d685b82a71a258201168fca70:title=セッションのデータベースストレージを有効に]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/c95f9d5236b9d85e206b09aadee733a727ae7634:title=セッション　データベースストア]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/aa93f612dd4dfbb50776a01db92c36c51d78afef:title=find_cart メソッドを追加]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/414166a3111d67f928190ff1a7c09552deb62269:title=Cart モデルクラス追加]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/1ca266fe95a18b6b24a0f88db9ec477118587a4e:title=view template カートに入れるボタンを押したときに product.id もパラメータで渡すように]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/9237ad0d8803168592a2457772b19c649dbbff23:title=add_to_cart 実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/6d98495879d34247375fbd2553122022b11b8209:title=template added]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/75b72701778904c5f71e9f775552ba3b8386120d:title=CartItem クラス追加]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/c35308446456145d70be38c6560d21cc879abc53:title=add_product メソッドを改良 数量を考慮]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/644c0b3fa1c065994cb742c7bf608974d2c9fb73:title=view updated]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/52d3aca7b73cf3cad096fa8660cbae9e7de94307:title=例外処理]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/d2ca1031cbc7d315e9edff0957cf640a977e336f:title=flash notice 埋め込み部分をテンプレートに追記]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/138d85995bef8ad54d1f17bab5269d934e5c1ed0:title=CSS]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/1112e2a9fca0a11823b0acadb2c86c60f4d729eb:title=カートを空にするボタンを追加]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/928b56ad414178b9b450c0af63570b84f000b4f1:title=empty_cart アクションを実装]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/ba2b5ebfbacda11b6dff2b589bdde1debb706393:title=redirect_to_index メソッドを追加して処理をまとめた 重複はなくす]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/86a6a24e0fe39ce603bb7ef6b90abc0a7b6a217c:title=template updated]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/f62cb5052e42ba33775be6c5cf1b21a3b29eb462:title=add total_price method]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/c1fcb0e530a7d921b5e5bea9ae02eb60ab6bfb02:title=CSS]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/c66e1a6011f9129cc4278f2decfe0c8e3492ba40:title=自由課題、セッションにカウンターを保持]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/8148c7f3ae8599a0ad2f439ce653e9be6f5489ee:title=自由課題、訪問数カウントを表示, pluralize]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/5ce07472df8bd99355dae7b623674bff2de6ba5c:title=自由課題、カートに入れたらカウントをゼロに]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/bea067f3167963ec69b2e4d10baf476348319df6:title=自由課題、 counter > 5]
+
+
+- <a href="http://d.hatena.ne.jp/a666666/searchdiary?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版</a>
+- <a href="http://d.hatena.ne.jp/a666666/archive?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版 (見だし一覧)</a>
+- [http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
+
+<!-- **************************************** -->
