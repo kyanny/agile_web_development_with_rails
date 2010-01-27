@@ -1,0 +1,43 @@
+*1264608105*[Ruby][Rails][RailsによるアジャイルWebアプリケーション開発 第3版]第4章 Hello, Rails!
+
+4章からは実践編なのでひたすらサンプルコードを打ち込んだ。なのであんまり拾ってメモすることがない。いくつかマーカーをひいたところもあるので、そこを書きつつ、 github のコミットへの permalink を並べておく。
+
+- URL
+-- /path/to/app/controller/action
+- ERb (ERB)
+-- <%= ... %> 値で置き換える
+-- <% ... %> ブロックとか
+-- -%> (-) 空白を除去
+- ヘルパーメソッド
+-- <%=h ... %> HTMLエスケープ
+-- <%= link_to ... %> 論理的なリンクの張り方
+
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/7df64315ed6444b3290ed4f5411b9dfa53fdb2f9:title=4.1 Hello, Rails! generate Say controller]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b67b2ddc5be79ac8d479995bb62d49682cc5e2f5:title=4.1 Hello, Rails! add hello action]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b2b0beced436e99a6cb71f88ef5687ebce37d886:title=Add .gitignore]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/fb5daf7b167d7bcb68dea64d7ea58f9a2f582552:title=4.1 Hello, Rails! add hello action template]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/0c58575cde5df667d06d086d4606d810ea8867fd:title=4.1 Hello,Rails! ERb demo]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/16c308d73203e7b223bf17e4d19af41307644e91:title=merry christmas!]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/3d203329b5a22553d26fc264cd2fb32908d1c5ed:title=ERb では -%> とすると後続の改行文字を削る -%] と同じ]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/8382e9975b583f97fa2e0e647a2e1f482aa5e89b:title=-%>]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/40338cf92c29d00d971c8e1bede729c9c45d3a83:title=ブロック付きメソッド、ループ]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/dcb97aa2223b90563cf965552d2309feed90be97:title=<%= h(...) %> で HTML エスケープ]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/cbe715d8391ac6b49644124404809869d4b2efdc:title=実験コード消した 時刻の追加]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/792b78151973ac7c1a64eeecec954dbc385f9e6b:title=コントローラでインスタンス変数 @time に値を保存し、ビューで @time の値を参照する]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/f29dac45e99a69053049e76956b9a4c1ad64dd3a:title=add goodbye action]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/f0626d883541946b8b599fa6d0fbcf0a845c5ae1:title=add goodbye action template]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/6fb78be7725f22c0030267ecd831961cb56f6d7d:title=add link]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/b125d29890b9911cd95a4b497286f04a7712e189:title=link_to]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/edbf74e9494656dd5d52c81b522cd63ed19e5765:title=link_to]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/20eae33468f7d9c482b7211838b1c1bc9b15eaab:title=自由課題, loop, -%>]
+- [http://github.com/kyanny/agile_web_development_with_rails/commit/d8189760997d0053fd7f71f58e0516ba8365e5e5:title=自由課題, files]
+
+意味のあるコメントを書いてないとこういうとき困るのだなぁ。
+
+
+- <a href="http://d.hatena.ne.jp/a666666/searchdiary?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版</a>
+- <a href="http://d.hatena.ne.jp/a666666/archive?word=%2a%5bRails%a4%cb%a4%e8%a4%eb%a5%a2%a5%b8%a5%e3%a5%a4%a5%ebWeb%a5%a2%a5%d7%a5%ea%a5%b1%a1%bc%a5%b7%a5%e7%a5%f3%b3%ab%c8%af%20%c2%e83%c8%c7%5d">RailsによるアジャイルWebアプリケーション開発 第3版 (見だし一覧)</a>
+- [http://github.com/kyanny/agile_web_development_with_rails:title]
+[asin:4274067858:detail]
+
+<!-- **************************************** -->
