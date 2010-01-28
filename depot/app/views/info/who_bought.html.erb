@@ -1,2 +1,7 @@
-<h1>Info#who_bought</h1>
-<p>Find me in app/views/info/who_bought.html.erb</p>
+<h3><%= @product.title %>の購入者</h3>
+
+<ul>
+  <% for order in @orders -%>
+  <li><%= mail_to order.email, order.name %></li>
+  <% end -%>
+</ul>
