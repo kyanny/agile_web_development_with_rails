@@ -7,4 +7,6 @@ class InfoController < ApplicationController
         end
   end
 
+    def authorize
+    end
 end
